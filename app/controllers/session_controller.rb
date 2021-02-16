@@ -9,7 +9,7 @@ class SessionController < ApplicationController
       render json: user
     else
       flash[:error] = "Invalid username or password"
-      render json: {}, status: 401
+      render json: {}, status: 401 ###
     end
   end
 
@@ -18,13 +18,13 @@ class SessionController < ApplicationController
       user = User.find(session[:user_id])
       render json: user
     else
-      render json: {}, status: 401
+      render json: {}, status: 401 ###
     end
   end
 
   def destroy
     session[:user_id] = nil
-    render json: {
+    render json: { ###
       success: true
     }
   end
