@@ -26,6 +26,7 @@ ActiveRecord::Schema.define(version: 2021_02_17_054236) do
     t.integer "popluation"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "country_code"
   end
 
   create_table "messages", force: :cascade do |t|
