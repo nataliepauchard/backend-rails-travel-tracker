@@ -4,6 +4,7 @@ class VisitsController < ApplicationController
   end
 
   def show
+    @current_user = User.find params[:user_id] # dodgy
     visits = @current_user.visits.all
     render :json => visits, :include => [:country]
   end
