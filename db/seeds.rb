@@ -12,3 +12,6 @@ u2 = User.create name: 'Dani B', :email => 'danib@ga.co', :password => '123', :a
 u3 = User.create name: 'Scott C', :email => 'scottc@ga.co', :password => '123', :admin => true
 u4 = User.create name: 'Jye H', :email => 'jyeh@ga.co', :password => 'chicken'
 puts "#{ User.count } users."
+
+Country.destroy_all
+Visit.destroy_all
