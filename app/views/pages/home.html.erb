@@ -1,5 +1,9 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<h1>Travel Tracker Map</h1>
+<p>Random Country: <span id="country"><%= @country %></span></p>
+
+<p>Server time: <%= @time %></p>
+
+<p>Uptime: <%= @uptime %></p>
 
 <% if @current_user.present? %>
 <p>
