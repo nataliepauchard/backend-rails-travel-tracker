@@ -6,6 +6,8 @@
 
 The purpose of the app is to simulate a scratch-map of the world where users can log in, keep track of the countries they've visited and make a bucket list of the countries they wish to visit. It's a simple app based on three models; Users, Countries and Visits.
 
+See travel tracker [here](https://daniiblack.github.io/react-scratch-map/). **Note: as we are still working out some deployment bugs, users are unable to create a new account. So to login and see the map in action, login with email and password as 'natp@ga.co' and '123'.**
+
 Users can sign up and log in with a password that gets encrypted. To create country lists and interact with the map users must be logged in.
 
 This was a project for training purposes and still a work in progress. It was meant to help us learn how to work as a team to build a website.
@@ -46,26 +48,21 @@ And added the below link to the html.index file
 
 ``` <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jvectormap/2.0.4/jquery-jvectormap.css" type="text/css" media="screen"/> ```
 
-The tutorial we followed was from this blog: ("https://allegra9.medium.com/react-world-map-75aceda9cc48")
+The tutorial we followed was from this [blog]("https://allegra9.medium.com/react-world-map-75aceda9cc48")
 
 +++
 
 ## Images Used
 
-The front image was pulled from an external source: ("https://images.pexels.com/photos/269888/pexels-photo-269888.jpeg")
+The front image was pulled from an external [source]("https://images.pexels.com/photos/269888/pexels-photo-269888.jpeg")
 
 The map itself was modified from the original CSS
-
-
-## Link to The Travel-Tracker App
-
-(Travel-Tracker Link Coming Soon)
 
 ![Image of Map](travel_tracker.png)
 
 ### Bugs / Fixes
 
-- There is a bug that is preventing us from deployment. Likely to be related to user session / cookies. Currently in the process of debugging this.
+- There is a bug that is preventing our frontend from communicating correctly with heroku. Likely to be related to user session / cookies. Currently in the process of debugging this.
 
 +++
 
