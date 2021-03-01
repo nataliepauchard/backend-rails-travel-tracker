@@ -10,7 +10,7 @@ class VisitsController < ApplicationController
 
   def create
     country = Country.find_or_create_by :country_code => params[:countryCode], :name => params[:countryName]
-    visit = Visit.find_or_create_by :user_id => @current_user.id, :country_id => country.id
+    visit = Visit.find_or_create_by :name => 'Jye H', :country_id => country.id
     visit.has_visited = params[:has_visited]
     visit.on_bucket_list = params[:on_bucket_list]
     visit.save
