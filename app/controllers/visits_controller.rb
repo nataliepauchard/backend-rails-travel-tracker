@@ -4,7 +4,7 @@ class VisitsController < ApplicationController
   end
 
   def show
-    visits = @current_user.visits.all
+    visits = User.find_by(:name => 'Jye H').visits.all
     render :json => visits, :include => [:country]
   end
 
