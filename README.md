@@ -44,27 +44,21 @@ We used the react-jvectormap library for the map in React and imported it:
 
 ``` import { VectorMap } from "react-jvectormap" ```
 
-And added the below link to the html.index file
-
-``` <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jvectormap/2.0.4/jquery-jvectormap.css" type="text/css" media="screen"/> ```
-
-The tutorial we followed was from this [blog]("https://allegra9.medium.com/react-world-map-75aceda9cc48")
-
-+++
+And added the styles from this [CDN](https://cdnjs.cloudflare.com/ajax/libs/jvectormap/2.0.4/jquery-jvectormap.css) to the index.css file
 
 ## Images Used
 
-The front image was pulled from an external [source]("https://images.pexels.com/photos/269888/pexels-photo-269888.jpeg")
+The front image was pulled from an external [source](https://images.pexels.com/photos/269888/pexels-photo-269888.jpeg)
 
-The map itself was modified from the original CSS
+The map itself was slightly modified from the original code in the Map.jsx file to behave the way we wanted and to store the correct data in it's state.
+
+Below is an example of what a user's map may look like.
 
 ![Image of Map](travel_tracker.png)
 
 ### Bugs / Fixes
 
-- There is a bug that is preventing our frontend from communicating correctly with heroku. Likely to be related to user session / cookies. Currently in the process of debugging this.
-
-+++
+- There is a bug that is preventing our frontend from communicating correctly with heroku. We believe it is related to user session / cookies. Currently in the process of debugging this.
 
 ### Next Steps / Stretch Goals
 
@@ -75,5 +69,3 @@ The map itself was modified from the original CSS
 - Upload photos of users' travels and enable comments on photos
 
 - Provide historical / statistical information for countries
-
-+++
