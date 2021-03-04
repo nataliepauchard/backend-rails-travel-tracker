@@ -22,7 +22,7 @@ We used:
 
 
 
-### Approach: Ruby on Rails Back End
+### Approach: Ruby on Rails Backend
 
 At first the User model was created which included secure log in and a user authentication process. This was then tested with React to ensure Rails and React worked together. Then the three models were sketched out in Google sheets to determine the appropriate associations, rows and columns. The associations between the three models were has_many / belongs_to associations without any join tables. Visits and Countries were associated through visits. See table below:
 
@@ -36,7 +36,9 @@ Once the models were sketched out they were migrated into Rails, including the u
 
 In the Visit model, associations with User and Country had to be ``` :optional => true ``` for the code to run properly
 
-### Approach: React Front End
+### Approach: React Frontend
+
+The frontend repo can be found [here](https://github.com/DaniiBlack/react-scratch-map).
 
 We used the react-jvectormap library for the map in React and imported it:
 
